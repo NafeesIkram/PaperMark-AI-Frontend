@@ -1,0 +1,426 @@
+/* =========================================================
+   SETTINGS
+========================================================= */
+
+.page {
+  padding: 30px 34px 40px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  color: var(--green);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  margin-bottom: 6px;
+}
+
+.title {
+  margin: 0;
+
+  color: var(--ink);
+
+  font-size: 28px;
+  line-height: 1.15;
+
+  letter-spacing: -0.6px;
+}
+
+.description {
+  margin: 7px 0 0;
+
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* =========================================================
+   SETTINGS LAYOUT
+========================================================= */
+
+.layout {
+  display: grid;
+
+  grid-template-columns: 210px minmax(0, 1fr);
+
+  gap: 18px;
+
+  align-items: start;
+}
+
+/* =========================================================
+   SETTINGS NAV
+========================================================= */
+
+.navCard {
+  padding: 8px;
+
+  background: #ffffff;
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.navItem {
+  width: 100%;
+
+  min-height: 38px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 10px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #707a75;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  text-align: left;
+}
+
+.navItem:hover {
+  background: #f6f9f7;
+}
+
+.navItemActive {
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+/* =========================================================
+   SETTINGS CONTENT
+========================================================= */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  padding: 20px;
+
+  background: #ffffff;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.cardHeader {
+  margin-bottom: 18px;
+}
+
+.cardTitle {
+  margin: 0;
+
+  color: var(--ink);
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.cardDescription {
+  margin: 5px 0 0;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup:last-child {
+  margin-bottom: 0;
+}
+
+.label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #46514b;
+
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.input {
+  width: 100%;
+  height: 38px;
+
+  padding: 0 11px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: var(--ink);
+
+  font-size: 10px;
+}
+
+.input:focus {
+  border-color: #9bc6a6;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(21, 128, 61, 0.07);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 100px;
+
+  padding: 10px 11px;
+
+  resize: vertical;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  outline: none;
+
+  background: #ffffff;
+
+  color: var(--ink);
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.textarea:focus {
+  border-color: #9bc6a6;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(21, 128, 61, 0.07);
+}
+
+.helpText {
+  margin-top: 5px;
+
+  color: #8a948e;
+
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   API KEY
+========================================================= */
+
+.apiRow {
+  display: flex;
+  gap: 8px;
+}
+
+.apiInput {
+  flex: 1;
+}
+
+.saveButton {
+  height: 38px;
+  padding: 0 13px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+  border: 1px solid var(--green);
+  border-radius: 8px;
+
+  background: var(--green);
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.saveButton:hover {
+  background: var(--green-dark);
+}
+
+.secondaryButton {
+  height: 36px;
+  padding: 0 12px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #606b65;
+
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.secondaryButton:hover {
+  background: #f5f8f6;
+}
+
+/* =========================================================
+   TOGGLE
+========================================================= */
+
+.settingRow {
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 11px 0;
+
+  border-bottom: 1px solid #edf1ee;
+}
+
+.settingRow:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.settingInfo {
+  min-width: 0;
+}
+
+.settingTitle {
+  color: var(--ink);
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.settingDescription {
+  margin-top: 3px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+.toggle {
+  width: 38px;
+  height: 21px;
+
+  flex-shrink: 0;
+
+  padding: 2px;
+
+  border: 0;
+  border-radius: 999px;
+
+  background: #dce3df;
+}
+
+.toggleActive {
+  background: var(--green);
+}
+
+.toggleKnob {
+  width: 17px;
+  height: 17px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  transition: transform 0.15s ease;
+}
+
+.toggleActive .toggleKnob {
+  transform: translateX(17px);
+}
+
+/* =========================================================
+   WARNING
+========================================================= */
+
+.warning {
+  padding: 11px 12px;
+
+  border: 1px solid #eadfbd;
+  border-radius: 8px;
+
+  background: #fffbef;
+
+  color: #866d2b;
+
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.success {
+  padding: 10px 12px;
+
+  border: 1px solid #cfe4d5;
+  border-radius: 8px;
+
+  background: #f3faf5;
+
+  color: #347349;
+
+  font-size: 9px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+  .page {
+    padding: 22px 18px 30px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .navCard {
+    display: flex;
+    overflow-x: auto;
+    gap: 4px;
+  }
+
+  .navItem {
+    width: auto;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .apiRow {
+    flex-direction: column;
+  }
+
+  .saveButton {
+    width: 100%;
+  }
+}

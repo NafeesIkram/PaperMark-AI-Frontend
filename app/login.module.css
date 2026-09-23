@@ -1,0 +1,335 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 20px;
+
+  background: #f6f9f7;
+}
+
+.card {
+  width: 100%;
+  max-width: 410px;
+
+  padding: 32px;
+
+  border: 1px solid #e1e8e3;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 35px rgba(31, 58, 43, 0.07);
+}
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 28px;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+
+  border: 1px solid #e3e9e5;
+  border-radius: 12px;
+
+  background: #ffffff;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brandName {
+  margin: 0;
+
+  color: #1e2822;
+
+  font-size: 18px;
+  font-weight: 800;
+
+  letter-spacing: -0.02em;
+}
+
+.brandSub {
+  margin: 3px 0 0;
+
+  color: #87918b;
+
+  font-size: 10px;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  margin: 0;
+
+  color: #202923;
+
+  font-size: 24px;
+  font-weight: 800;
+
+  letter-spacing: -0.025em;
+}
+
+.heading p {
+  margin: 7px 0 0;
+
+  color: #7f8983;
+
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   ALERTS
+========================================================= */
+
+.error,
+.success {
+  margin-bottom: 15px;
+
+  padding: 10px 12px;
+
+  border-radius: 8px;
+
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.error {
+  border: 1px solid #efd6d6;
+  background: #fff7f7;
+  color: #a14f4f;
+}
+
+.success {
+  border: 1px solid #d2e8d9;
+  background: #f2faf4;
+  color: #317448;
+}
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formGroup {
+  margin: 0;
+}
+
+.label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #38423c;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.inputWrap {
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 0 12px;
+
+  border: 1px solid #dce4df;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #929b96;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.inputWrap:focus-within {
+  border-color: #5a9a70;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(64, 139, 84, 0.08);
+}
+
+.inputWrap input {
+  width: 100%;
+  height: 100%;
+
+  min-width: 0;
+
+  border: 0;
+  outline: 0;
+
+  background: transparent;
+
+  color: #28332c;
+
+  font-size: 11px;
+}
+
+.inputWrap input::placeholder {
+  color: #a4aca7;
+}
+
+/* =========================================================
+   PASSWORD TOGGLE
+========================================================= */
+
+.passwordToggle {
+  width: 26px;
+  height: 26px;
+
+  display: grid;
+  place-items: center;
+
+  flex-shrink: 0;
+
+  border: 0;
+  background: transparent;
+
+  color: #89938d;
+
+  cursor: pointer;
+}
+
+.passwordToggle:hover {
+  color: #397b4f;
+}
+
+/* =========================================================
+   SUBMIT
+========================================================= */
+
+.submit {
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin-top: 5px;
+
+  border: 0;
+  border-radius: 9px;
+
+  background: #2f7d4b;
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.submit:hover {
+  background: #276b40;
+}
+
+.submit:active {
+  transform: translateY(1px);
+}
+
+.submit:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  gap: 5px;
+
+  margin-top: 21px;
+
+  color: #8a938e;
+
+  font-size: 10px;
+}
+
+.footer a {
+  color: #2f7d4b;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.bottom {
+  margin-top: 18px;
+
+  color: #a0a8a3;
+
+  font-size: 9px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 500px) {
+  .page {
+    padding: 20px 14px;
+  }
+
+  .card {
+    padding: 25px 20px;
+    border-radius: 13px;
+  }
+}

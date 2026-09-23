@@ -1,0 +1,854 @@
+/* =========================================================
+   PAPERMark AI
+   New Evaluation Page
+   ========================================================= */
+
+.page {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 28px 30px 50px;
+}
+
+.pageHead {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin-bottom: 7px;
+  color: #16803d;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.pageTitle {
+  margin: 0;
+  color: #17251d;
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+.pageDesc {
+  margin: 7px 0 0;
+  color: #7c8780;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.createEvaluationError {
+  margin-bottom: 18px;
+  padding: 11px 14px;
+  border: 1px solid #efcaca;
+  border-radius: 8px;
+  background: #fff7f7;
+  color: #b42318;
+  font-size: 11px;
+}
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.evaluationSection {
+  width: 100%;
+  margin-bottom: 18px;
+  padding: 23px 20px 22px;
+  border: 1px solid #e1e8e3;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px rgba(25, 50, 35, 0.025);
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-bottom: 22px;
+}
+
+.sectionNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  flex: 0 0 25px;
+  border-radius: 7px;
+  background: #e9f7ee;
+  color: #16803d;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.sectionHeading h2 {
+  margin: 0;
+  color: #19271f;
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 750;
+}
+
+.sectionHeading p {
+  margin: 4px 0 0;
+  color: #818b85;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.field {
+  min-width: 0;
+}
+
+.field label,
+.label {
+  display: block;
+  margin-bottom: 6px;
+  color: #36433b;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.requiredStar {
+  margin-left: 2px;
+  color: #d92d20;
+}
+
+.optionalText {
+  margin-left: 4px;
+  color: #9aa49e;
+  font-size: 9px;
+  font-weight: 500;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  border: 1px solid #dce5df;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #26342c;
+  font-size: 11px;
+  transition: 0.15s ease;
+}
+
+.input {
+  height: 36px;
+  padding: 8px 10px;
+}
+
+.textarea {
+  min-height: 92px;
+  padding: 9px 10px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.input::placeholder,
+.textarea::placeholder,
+.ruleTextarea::placeholder,
+.marksInput::placeholder {
+  color: #a5aea8;
+}
+
+.input:focus,
+.textarea:focus,
+.ruleTextarea:focus,
+.marksInput:focus {
+  border-color: #58a66f;
+  box-shadow: 0 0 0 3px rgba(22, 128, 61, 0.07);
+}
+
+.fieldHelp {
+  margin: 6px 0 0;
+  color: #89938d;
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+/* =========================================================
+   QUESTION LIST
+   ========================================================= */
+
+.questionList {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.questionCard {
+  overflow: hidden;
+  border: 1px solid #dfe7e2;
+  border-radius: 9px;
+  background: #ffffff;
+}
+
+/* Header */
+
+.questionHeader {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  min-height: 50px;
+  border-bottom: 1px solid #e7ede9;
+  background: #f8faf9;
+}
+
+.questionHeaderMain {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+  gap: 9px;
+  padding: 9px 11px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #26342c;
+  cursor: pointer;
+  text-align: left;
+}
+
+.questionHeaderMain:hover {
+  background: #f3f8f5;
+}
+
+.questionNumber {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 24px;
+  flex: 0 0 29px;
+  border-radius: 6px;
+  background: #e8f6ed;
+  color: #16803d;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.questionHeaderText {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 0;
+}
+
+.questionHeaderText strong {
+  color: #26342c;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.questionHeaderText span {
+  color: #7c8780;
+  font-size: 9px;
+}
+
+.questionHeaderText .dot {
+  color: #b0b8b3;
+}
+
+.questionHeaderActions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 9px;
+}
+
+.iconButton,
+.iconButtonDanger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  padding: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.iconButton {
+  border: 1px solid #dce5df;
+  background: #ffffff;
+  color: #6d7971;
+}
+
+.iconButton:hover {
+  border-color: #b4cfbb;
+  color: #16803d;
+  background: #f6fbf8;
+}
+
+.iconButtonDanger {
+  border: 1px solid #ecd9d9;
+  background: #fffafa;
+  color: #b84d4d;
+}
+
+.iconButtonDanger:hover {
+  border-color: #e2baba;
+  background: #fff3f3;
+}
+
+/* Body */
+
+.questionBody {
+  padding: 17px 15px 19px;
+}
+
+.questionTopGrid {
+  width: 150px;
+  margin-top: 14px;
+}
+
+/* =========================================================
+   SUBSECTION
+   ========================================================= */
+
+.subsectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 11px;
+}
+
+.subsectionHeader h3 {
+  margin: 0;
+  color: #334139;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.subsectionHeader p {
+  margin: 4px 0 0;
+  color: #8a948e;
+  font-size: 9px;
+  line-height: 1.45;
+}
+
+/* =========================================================
+   METHOD
+   ========================================================= */
+
+.methodSection {
+  margin-top: 19px;
+  padding-top: 17px;
+  border-top: 1px solid #edf1ee;
+}
+
+.methodGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.methodCard {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  min-height: 75px;
+  padding: 11px;
+  border: 1px solid #dfe7e2;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #27352d;
+  cursor: pointer;
+  text-align: left;
+}
+
+.methodCard:hover {
+  border-color: #b6d4bf;
+  background: #fbfefc;
+}
+
+.methodCardSelected {
+  border-color: #4d9d68;
+  background: #f1faf4;
+  box-shadow: 0 0 0 1px rgba(77, 157, 104, 0.08);
+}
+
+.methodRadio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  flex: 0 0 17px;
+  margin-top: 1px;
+  border: 1px solid #cfdad3;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #ffffff;
+}
+
+.methodCardSelected .methodRadio {
+  border-color: #16803d;
+  background: #16803d;
+}
+
+.methodCard strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #29372f;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.methodCard p {
+  margin: 0;
+  color: #87918b;
+  font-size: 8.5px;
+  line-height: 1.45;
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 29px;
+  padding: 6px 10px;
+  border: 1px solid #cfe1d5;
+  border-radius: 7px;
+  background: #f3faf5;
+  color: #16803d;
+  font-size: 9px;
+  font-weight: 750;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.secondaryButton:hover {
+  border-color: #a9cbb2;
+  background: #eaf7ee;
+}
+
+/* =========================================================
+   RUBRIC
+   ========================================================= */
+
+.rubricBox {
+  margin-top: 17px;
+  padding: 13px;
+  border: 1px solid #e1e9e4;
+  border-radius: 8px;
+  background: #fafcfb;
+}
+
+.emptyBox {
+  padding: 13px;
+  border: 1px dashed #d9e3dd;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #939d97;
+  font-size: 9px;
+  text-align: center;
+}
+
+.rubricList {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.rubricRow {
+  display: grid;
+  grid-template-columns: 26px minmax(0, 1fr) 72px 28px;
+  align-items: center;
+  gap: 7px;
+}
+
+.rubricIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 6px;
+  background: #eaf7ee;
+  color: #16803d;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.marksInput {
+  width: 100%;
+  height: 34px;
+  padding: 7px 8px;
+  border: 1px solid #dce5df;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #26342c;
+  font-size: 10px;
+}
+
+.removeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: 1px solid #ecd9d9;
+  border-radius: 6px;
+  background: #fffafa;
+  color: #b84d4d;
+  cursor: pointer;
+}
+
+.removeButton:hover {
+  background: #fff3f3;
+}
+
+.rubricTotal {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  font-size: 9px;
+}
+
+.rubricTotal strong {
+  margin-left: 4px;
+}
+
+.rubricTotalOk {
+  color: #16803d;
+}
+
+.rubricTotalError {
+  color: #b42318;
+}
+
+/* =========================================================
+   EXPECTED ANSWER
+   ========================================================= */
+
+.expectedAnswer {
+  margin-top: 19px;
+  padding-top: 17px;
+  border-top: 1px solid #edf1ee;
+}
+
+/* =========================================================
+   CUSTOM RULES
+   ========================================================= */
+
+.customRules {
+  margin-top: 19px;
+  padding-top: 17px;
+  border-top: 1px solid #edf1ee;
+}
+
+.ruleList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ruleCard {
+  display: grid;
+  grid-template-columns: 25px 170px minmax(0, 1fr) 70px 28px;
+  align-items: start;
+  gap: 7px;
+  padding: 9px;
+  border: 1px solid #e1e8e3;
+  border-radius: 8px;
+  background: #fafcfb;
+}
+
+.ruleNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 6px;
+  background: #edf7f0;
+  color: #16803d;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.ruleTextarea {
+  width: 100%;
+  min-height: 55px;
+  padding: 7px 8px;
+  border: 1px solid #dce5df;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #26342c;
+  font-size: 10px;
+  line-height: 1.4;
+  resize: vertical;
+}
+
+/* =========================================================
+   ADD QUESTION
+   ========================================================= */
+
+.addQuestionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  height: 38px;
+  margin-top: 12px;
+  border: 1px dashed #bdd6c5;
+  border-radius: 8px;
+  background: #f7fbf8;
+  color: #16803d;
+  font-size: 10px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.addQuestionButton:hover {
+  background: #eef8f1;
+  border-color: #9fc4aa;
+}
+
+/* =========================================================
+   OVERALL RULES
+   ========================================================= */
+
+.overallRules {
+  width: 100%;
+}
+
+/* =========================================================
+   EXTENSIONS
+   ========================================================= */
+
+.extensionGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.extensionCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  min-height: 100px;
+  padding: 13px;
+  border: 1px solid #dfe7e2;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #26342c;
+  cursor: pointer;
+  text-align: left;
+}
+
+.extensionCard:hover {
+  border-color: #b5d3bd;
+  background: #fbfefc;
+}
+
+.extensionCardSelected {
+  border-color: #4d9d68;
+  background: #f1faf4;
+}
+
+.extensionIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
+  border-radius: 8px;
+  background: #eaf7ee;
+  color: #16803d;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.extensionContent {
+  min-width: 0;
+  flex: 1;
+}
+
+.extensionContent h3 {
+  margin: 1px 0 5px;
+  color: #29372f;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.extensionContent p {
+  margin: 0;
+  color: #87918b;
+  font-size: 8.5px;
+  line-height: 1.45;
+}
+
+.extensionBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: 9px;
+  color: #969f99;
+  font-size: 8px;
+}
+
+.extensionStatus {
+  color: #16803d;
+  font-weight: 750;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.evaluationFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 3px 1px 0;
+}
+
+.footerInfo {
+  color: #7e8982;
+  font-size: 10px;
+}
+
+.createEvaluationButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 9px 15px;
+  border: 0;
+  border-radius: 8px;
+  background: #16803d;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.createEvaluationButton:hover {
+  background: #116b32;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 1100px) {
+  .extensionGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .methodGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ruleCard {
+    grid-template-columns: 25px 160px minmax(0, 1fr) 65px 28px;
+  }
+}
+
+@media (max-width: 800px) {
+  .page {
+    padding: 22px 16px 40px;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .ruleCard {
+    grid-template-columns: 25px 1fr;
+  }
+
+  .ruleCard .ruleTextarea {
+    grid-column: 2;
+  }
+
+  .ruleCard .marksInput {
+    grid-column: 2;
+  }
+
+  .ruleCard .removeButton {
+    grid-column: 2;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 17px 11px 30px;
+  }
+
+  .pageTitle {
+    font-size: 23px;
+  }
+
+  .evaluationSection {
+    padding: 17px 12px;
+    border-radius: 10px;
+  }
+
+  .sectionHeading {
+    margin-bottom: 17px;
+  }
+
+  .extensionGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .questionHeaderText span:nth-of-type(n + 3) {
+    display: none;
+  }
+
+  .rubricRow {
+    grid-template-columns: 25px 1fr;
+  }
+
+  .rubricRow .marksInput {
+    grid-column: 2;
+  }
+
+  .rubricRow .removeButton {
+    grid-column: 2;
+    justify-self: end;
+  }
+
+  .evaluationFooter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .createEvaluationButton {
+    width: 100%;
+  }
+}

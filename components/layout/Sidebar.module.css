@@ -1,0 +1,169 @@
+.sidebar {
+  width: 248px;
+  background: #ffffff;
+  border-right: 1px solid var(--border);
+  padding: 22px 14px;
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 20;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 10px 26px;
+}
+
+.brandLogo {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  background: #ffffff;
+}
+
+.brandLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brandName {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.brandSub {
+  color: var(--muted);
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+.navSection {
+  color: #9aa39e;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 14px 11px 8px;
+  text-transform: uppercase;
+}
+
+.navItem {
+  width: 100%;
+  border: 0;
+  background: transparent;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #5f6a64;
+  padding: 11px 12px;
+  border-radius: 10px;
+  text-align: left;
+  margin-bottom: 3px;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+.navItem:hover {
+  background: #f5f7f6;
+  color: var(--ink);
+}
+
+.navItem.active {
+  background: var(--green-soft);
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
+.sidebarBottom {
+  position: absolute;
+  bottom: 20px;
+  left: 14px;
+  right: 14px;
+}
+
+.userMini {
+  border-top: 1px solid var(--border);
+  padding: 16px 9px 0;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #d8f0df;
+  color: var(--green-dark);
+
+  display: grid;
+  place-items: center;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+/* =========================================================
+   ABOUT ME
+========================================================= */
+
+.aboutItem {
+  position: relative;
+}
+
+/* Small green accent when About Me is active */
+.aboutItem.active {
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+/* Optional subtle hover effect */
+.aboutItem:hover {
+  background: #f5f9f6;
+  color: var(--green-dark);
+}
+
+.logoutButton {
+  width: 100%;
+  margin-top: 14px;
+  padding: 10px 12px;
+
+  border: 1px solid #e3e8e5;
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #6b746f;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.logoutButton:hover {
+  background: #fff5f5;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+.logoutButton:active {
+  transform: translateY(1px);
+}

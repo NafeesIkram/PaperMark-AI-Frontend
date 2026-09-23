@@ -1,0 +1,476 @@
+/* =========================================================
+   ANALYTICS
+========================================================= */
+
+.page {
+  padding: 30px 34px 40px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.title {
+  margin: 0;
+  color: var(--ink);
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.6px;
+}
+
+.description {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* =========================================================
+   STAT GRID
+========================================================= */
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.statCard {
+  padding: 17px;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.statHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statLabel {
+  color: #7c8681;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.statIcon {
+  width: 31px;
+  height: 31px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+.statValue {
+  margin-top: 10px;
+  color: var(--ink);
+  font-size: 23px;
+  font-weight: 850;
+}
+
+.statSub {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 9px;
+}
+
+/* =========================================================
+   CONTENT GRID
+========================================================= */
+
+.contentGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.cardHeader {
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.cardTitle {
+  margin: 0;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.cardDescription {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+/* =========================================================
+   PERFORMANCE
+========================================================= */
+
+.performance {
+  padding: 18px 20px;
+}
+
+.performanceRow {
+  margin-bottom: 17px;
+}
+
+.performanceRow:last-child {
+  margin-bottom: 0;
+}
+
+.performanceTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+.performanceLabel {
+  color: #606b65;
+  font-size: 10px;
+}
+
+.performanceValue {
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.progress {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #edf1ee;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--green);
+}
+
+/* =========================================================
+   DISTRIBUTION
+========================================================= */
+
+.distribution {
+  padding: 18px 20px;
+}
+
+.distributionRow {
+  display: grid;
+  grid-template-columns: 65px 1fr 30px;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 13px;
+}
+
+.distributionRow:last-child {
+  margin-bottom: 0;
+}
+
+.distributionLabel {
+  color: #69736e;
+  font-size: 9px;
+}
+
+.bar {
+  height: 8px;
+  background: #edf1ee;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background: var(--green);
+  border-radius: inherit;
+}
+
+.distributionValue {
+  color: var(--ink);
+  font-size: 9px;
+  font-weight: 800;
+  text-align: right;
+}
+
+/* =========================================================
+   INSIGHTS
+========================================================= */
+
+.insights {
+  margin-top: 18px;
+  padding: 18px 20px;
+}
+
+.insightGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.insight {
+  padding: 13px;
+  border: 1px solid #e7ece9;
+  border-radius: 9px;
+  background: #fafcfb;
+}
+
+.insightTitle {
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.insightText {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.empty {
+  padding: 50px 20px;
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .page {
+    padding: 22px 18px 30px;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .insightGrid {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================================================
+   LOADING / ERROR
+========================================================= */
+
+.loadingCard {
+  padding: 40px 20px;
+
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  color: var(--muted);
+  font-size: 12px;
+
+  text-align: center;
+}
+
+.errorCard {
+  margin-bottom: 20px;
+  padding: 18px 20px;
+
+  background: #fff7f7;
+  border: 1px solid #f1d2d2;
+  border-radius: 14px;
+}
+
+.errorTitle {
+  color: #b42318;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.errorText {
+  margin-top: 5px;
+
+  color: #7a3b3b;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.retryButton {
+  margin-top: 12px;
+
+  padding: 7px 12px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: var(--green);
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.retryButton:hover {
+  background: var(--green-dark);
+}
+
+/* =========================================================
+   AVERAGE SCORE
+========================================================= */
+
+.averageCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 20px;
+  margin-bottom: 18px;
+
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.averageLabel {
+  color: #7c8681;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.averageValue {
+  margin-top: 6px;
+
+  color: var(--ink);
+  font-size: 24px;
+  font-weight: 850;
+}
+
+.averageSub {
+  margin-top: 3px;
+
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.averageIcon {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.loadingCard {
+  padding: 45px 20px;
+
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  color: var(--muted);
+  font-size: 12px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.errorCard {
+  padding: 18px 20px;
+
+  background: #fff7f7;
+  border: 1px solid #f1d2d2;
+  border-radius: 14px;
+}
+
+.errorTitle {
+  color: #b42318;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.errorText {
+  margin-top: 5px;
+
+  color: #7a3b3b;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.retryButton {
+  margin-top: 12px;
+
+  padding: 7px 12px;
+
+  border: 0;
+  border-radius: 7px;
+
+  background: var(--green);
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+.retryButton:hover {
+  background: var(--green-dark);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .averageCard {
+    align-items: flex-start;
+  }
+
+}

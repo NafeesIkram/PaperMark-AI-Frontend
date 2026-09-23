@@ -1,0 +1,558 @@
+.page {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 28px 32px 50px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 18px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #66736c;
+  text-decoration: none;
+  font-size: 11px;
+  margin-bottom: 17px;
+}
+
+.backLink:hover {
+  color: #15803d;
+}
+
+.eyebrow {
+  color: #15803d;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+
+.title {
+  margin: 0;
+  color: #17231d;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.studentId {
+  margin: 6px 0 0;
+  color: #7f8b84;
+  font-size: 11px;
+}
+
+.scoreCard {
+  min-width: 170px;
+  padding: 15px 18px;
+  border: 1px solid #dce8df;
+  border-radius: 12px;
+  background: #ffffff;
+  text-align: right;
+}
+
+.scoreLabel {
+  color: #849089;
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.scoreValue {
+  margin-top: 5px;
+  color: #15803d;
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 800;
+}
+
+.scoreValue span {
+  color: #8b968f;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.scorePercentage {
+  margin-top: 5px;
+  color: #66736c;
+  font-size: 10px;
+}
+
+.overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 11px;
+  margin-bottom: 25px;
+}
+
+.overviewItem {
+  min-height: 66px;
+  padding: 13px 15px;
+  border: 1px solid #dfe7e2;
+  border-radius: 11px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  color: #15803d;
+}
+
+.overviewItem div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.overviewItem span {
+  color: #849089;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.overviewItem strong {
+  color: #243229;
+  font-size: 12px;
+}
+
+.sectionHeader {
+  margin-bottom: 13px;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  color: #1b2821;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.sectionHeader p {
+  margin: 5px 0 0;
+  color: #829088;
+  font-size: 10px;
+}
+
+.questionList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.questionCard {
+  overflow: hidden;
+  border: 1px solid #dfe7e2;
+  border-radius: 13px;
+  background: #ffffff;
+}
+
+.questionHeader {
+  min-height: 73px;
+  padding: 15px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #e7ece9;
+}
+
+.questionNumber {
+  color: #15803d;
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 5px;
+}
+
+.questionHeader h3 {
+  margin: 0;
+  color: #27352d;
+  font-size: 12px;
+  line-height: 1.45;
+  font-weight: 700;
+}
+
+.questionScore {
+  flex-shrink: 0;
+  color: #15803d;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.questionScore span {
+  color: #8a958f;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  padding: 15px;
+  background: #fafcfb;
+}
+
+.answerPanel {
+  min-width: 0;
+  border: 1px solid #e0e8e3;
+  border-radius: 9px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.panelHeader {
+  height: 35px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e6ece8;
+  background: #f7faf8;
+}
+
+.panelHeader span {
+  color: #526058;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.answerText {
+  min-height: 145px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 13px;
+  color: #4b5851;
+  font-size: 10px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+.aiSection {
+  padding: 16px 18px 19px;
+  border-top: 1px solid #e7ece9;
+}
+
+.aiHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.aiEyebrow {
+  color: #15803d;
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.aiHeader h4 {
+  margin: 3px 0 0;
+  color: #29372f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.matchBadge {
+  padding: 6px 9px;
+  border: 1px solid #cfe4d5;
+  border-radius: 999px;
+  background: #eef8f1;
+  color: #18733b;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.feedbackBox {
+  display: flex;
+  gap: 10px;
+  padding: 12px 13px;
+  border: 1px solid #e0e9e3;
+  border-radius: 9px;
+  background: #f9fbfa;
+}
+
+.feedbackIcon {
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 7px;
+  background: #e8f6ed;
+  color: #15803d;
+}
+
+.feedbackBox strong {
+  color: #35433b;
+  font-size: 10px;
+}
+
+.feedbackBox p {
+  margin: 4px 0 0;
+  color: #65726b;
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+.conceptBlock {
+  margin-top: 12px;
+}
+
+.conceptTitle,
+.conceptTitleMissing,
+.conceptTitleIncorrect {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 7px;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.conceptTitle {
+  color: #248044;
+}
+
+.conceptTitleMissing {
+  color: #9a7410;
+}
+
+.conceptTitleIncorrect {
+  color: #b54141;
+}
+
+.conceptList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.matched,
+.missing,
+.incorrect {
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 8px;
+  line-height: 1.35;
+}
+
+.matched {
+  border: 1px solid #d2ead9;
+  background: #f1faf4;
+  color: #2d7546;
+}
+
+.missing {
+  border: 1px solid #eee1b6;
+  background: #fffbec;
+  color: #92700f;
+}
+
+.incorrect {
+  border: 1px solid #f0d1d1;
+  background: #fff5f5;
+  color: #a13f3f;
+}
+
+.loadingPage,
+.errorPage {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingPage {
+  gap: 9px;
+  color: #7e8983;
+  font-size: 11px;
+}
+
+.errorPage {
+  text-align: center;
+}
+
+.errorIcon {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #fff1f1;
+  color: #c24b4b;
+  font-weight: 800;
+}
+
+.errorPage h2 {
+  margin: 12px 0 5px;
+  color: #26332b;
+  font-size: 16px;
+}
+
+.errorPage p {
+  margin: 0 0 16px;
+  color: #89948e;
+  font-size: 10px;
+}
+
+.backButton {
+  height: 34px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #dce5df;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #526058;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.spin {
+  animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 850px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .scoreCard {
+    width: 100%;
+    text-align: left;
+  }
+
+  .overview {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 20px 14px 35px;
+  }
+
+  .questionHeader {
+    align-items: flex-start;
+  }
+
+  .aiHeader {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+/* =========================================================
+   ADDITIONAL AI FEEDBACK DETAILS
+   ---------------------------------------------------------
+   IMPORTANT:
+   Existing CSS above is intentionally NOT changed.
+   ========================================================= */
+
+.feedbackDetails {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+
+.feedbackDetail {
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid #e0e8e3;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.feedbackDetailTitle {
+  margin-bottom: 6px;
+  font-size: 8px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.feedbackDetailText {
+  color: #65726b;
+  font-size: 9px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
+
+.shouldHave {
+  border-color: #d2ead9;
+  background: #f7fcf8;
+}
+
+.shouldHave .feedbackDetailTitle {
+  color: #248044;
+}
+
+.missingDetails {
+  border-color: #eee1b6;
+  background: #fffcf1;
+}
+
+.missingDetails .feedbackDetailTitle {
+  color: #92700f;
+}
+
+.incorrectDetails {
+  border-color: #f0d1d1;
+  background: #fff7f7;
+}
+
+.incorrectDetails .feedbackDetailTitle {
+  color: #a13f3f;
+}
+
+.positiveFeedback {
+  margin-top: 12px;
+  padding: 11px 13px;
+  border: 1px solid #d2ead9;
+  border-radius: 9px;
+  background: #f1faf4;
+}
+
+.positiveFeedback strong {
+  color: #248044;
+  font-size: 9px;
+}
+
+.positiveFeedback p {
+  margin: 4px 0 0;
+  color: #55705e;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+  .feedbackDetails {
+    grid-template-columns: 1fr;
+  }
+}

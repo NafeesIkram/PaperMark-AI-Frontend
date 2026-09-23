@@ -1,0 +1,391 @@
+/* =========================================================
+   ASSIGNMENTS
+========================================================= */
+
+.page {
+  padding: 30px 34px 40px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.title {
+  margin: 0;
+  color: var(--ink);
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.6px;
+}
+
+.description {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.newButton {
+  height: 39px;
+  padding: 0 14px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  border: 1px solid var(--green);
+  border-radius: 9px;
+
+  background: var(--green);
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.newButton:hover {
+  background: var(--green-dark);
+}
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.card {
+  overflow: hidden;
+
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.toolbar {
+  padding: 15px 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.filter {
+  height: 31px;
+  padding: 0 10px;
+
+  border: 1px solid transparent;
+  border-radius: 7px;
+
+  background: transparent;
+  color: #748079;
+
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.filter:hover {
+  background: #f5f8f6;
+}
+
+.filterActive {
+  border-color: #d5e4d9;
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+.searchWrap {
+  position: relative;
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  color: #919b95;
+  pointer-events: none;
+}
+
+.search {
+  width: 100%;
+  height: 35px;
+
+  padding: 0 10px 0 30px;
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  outline: none;
+
+  color: var(--ink);
+  background: #ffffff;
+
+  font-size: 10px;
+}
+
+.search:focus {
+  border-color: #9bc6a6;
+  box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.07);
+}
+
+.search::placeholder {
+  color: #a0a8a3;
+}
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.tableWrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+}
+
+.table th {
+  padding: 12px 17px;
+
+  background: #fafcfb;
+  border-bottom: 1px solid var(--border);
+
+  color: #7c8681;
+
+  text-align: left;
+
+  font-size: 9px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.045em;
+}
+
+.table td {
+  padding: 14px 17px;
+
+  border-bottom: 1px solid #edf1ee;
+
+  color: #66716b;
+
+  font-size: 10px;
+}
+
+.table tbody tr:hover {
+  background: #fbfdfc;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* =========================================================
+   ASSIGNMENT TITLE
+========================================================= */
+
+.titleCell {
+  min-width: 220px;
+}
+
+.titleCell strong {
+  display: block;
+
+  color: var(--ink);
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.titleCell span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 9px;
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.statusCompleted {
+  background: #eaf7ee;
+  color: #16703b;
+}
+
+.statusProcessing {
+  background: #fff7df;
+  color: #9a6a00;
+}
+
+.statusDraft {
+  background: #f0f2f1;
+  color: #69736e;
+}
+
+/* =========================================================
+   OPEN BUTTON
+========================================================= */
+
+.openButton {
+  height: 29px;
+  padding: 0 10px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  border: 1px solid #d7e2db;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: var(--green-dark);
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.openButton:hover {
+  background: var(--green-soft);
+  border-color: #bfd6c5;
+}
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.empty {
+  padding: 60px 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  color: var(--muted);
+}
+
+.emptyIcon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+.emptyTitle {
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.emptyText {
+  margin-top: 4px;
+
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.loading {
+  padding: 60px 20px;
+
+  text-align: center;
+
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.error {
+  padding: 14px 16px;
+
+  border: 1px solid #efd0d0;
+  border-radius: 9px;
+
+  background: #fff7f7;
+  color: var(--danger);
+
+  font-size: 10px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 850px) {
+  .page {
+    padding: 24px 20px 32px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .newButton {
+    width: 100%;
+  }
+
+  .toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .searchWrap {
+    width: 100%;
+  }
+}

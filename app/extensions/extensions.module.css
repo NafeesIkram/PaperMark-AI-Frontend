@@ -1,0 +1,191 @@
+/* =========================================================
+   EXTENSIONS
+========================================================= */
+
+.page {
+  padding: 30px 34px 40px;
+}
+
+.header {
+  margin-bottom: 25px;
+}
+
+.eyebrow {
+  color: var(--green);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  margin-bottom: 6px;
+}
+
+.title {
+  margin: 0;
+
+  color: var(--ink);
+
+  font-size: 28px;
+  line-height: 1.15;
+
+  letter-spacing: -0.6px;
+}
+
+.description {
+  margin: 7px 0 0;
+
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* =========================================================
+   EXTENSION GRID
+========================================================= */
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 14px;
+}
+
+.card {
+  min-height: 185px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.card:hover {
+  border-color: #cdded2;
+
+  box-shadow:
+    0 7px 22px rgba(32, 56, 42, 0.05);
+
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.icon {
+  width: 43px;
+  height: 43px;
+
+  display: grid;
+  place-items: center;
+
+  margin-bottom: 15px;
+
+  border-radius: 11px;
+
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.content {
+  flex: 1;
+}
+
+.name {
+  margin: 0;
+
+  color: var(--ink);
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.cardDescription {
+  margin: 6px 0 0;
+
+  max-width: 390px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.bottom {
+  margin-top: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.comingSoon {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 8px;
+
+  border-radius: 999px;
+
+  background: #f0f2f1;
+  color: #707a75;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.addButton {
+  height: 31px;
+  padding: 0 11px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  border: 1px solid #d5e1da;
+  border-radius: 7px;
+
+  background: #ffffff;
+  color: var(--green-dark);
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.addButton:hover {
+  background: var(--green-soft);
+  border-color: #bfd6c5;
+}
+
+@media (max-width: 750px) {
+  .page {
+    padding: 22px 18px 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,579 @@
+/* ================================================= */
+/* PAGE */
+/* ================================================= */
+
+.page {
+  min-height: 100vh;
+  background: var(--background);
+  padding: 30px 34px 50px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+
+/* ================================================= */
+/* BACK */
+/* ================================================= */
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #65706a;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  margin-bottom: 24px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.backButton:hover {
+  color: var(--green-dark);
+  transform: translateX(-2px);
+}
+
+
+/* ================================================= */
+/* HERO */
+/* ================================================= */
+
+.hero {
+  margin-bottom: 24px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+
+  width: fit-content;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  background: var(--green-soft);
+  color: var(--green-dark);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  margin-bottom: 12px;
+}
+
+.title {
+  margin: 0;
+
+  color: #101713;
+
+  font-size: 32px;
+  line-height: 1.15;
+
+  letter-spacing: -0.7px;
+}
+
+.heroDescription {
+  max-width: 680px;
+
+  margin: 10px 0 0;
+
+  color: var(--muted);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* ================================================= */
+/* PROFILE */
+/* ================================================= */
+
+.profileCard {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+
+  padding: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  margin-bottom: 28px;
+
+  box-shadow:
+    0 3px 12px rgba(23, 34, 29, 0.025);
+}
+
+.profileImageWrapper {
+  width: 130px;
+  height: 130px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  background: var(--green-soft);
+
+  border: 2px solid #dce9e0;
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.profileInfo {
+  min-width: 0;
+}
+
+.profileLabel {
+  color: var(--green-dark);
+
+  font-size: 10px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  margin-bottom: 5px;
+}
+
+.profileName {
+  margin: 0;
+
+  color: #101713;
+
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.profileDescription {
+  max-width: 650px;
+
+  margin: 8px 0 14px;
+
+  color: var(--muted);
+
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+
+/* ================================================= */
+/* CONTACT BUTTONS */
+/* ================================================= */
+
+.contactLinks {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  flex-wrap: wrap;
+}
+
+.contactButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 8px 12px;
+
+  border-radius: 8px;
+
+  background: var(--green-soft);
+
+  color: var(--green-dark);
+
+  border: 1px solid #d7eadf;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.contactButton:hover {
+  background: #dff2e5;
+
+  border-color: #c5dfce;
+
+  transform: translateY(-1px);
+}
+
+
+/* ================================================= */
+/* SECTION */
+/* ================================================= */
+
+.section {
+  margin-bottom: 28px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 14px;
+}
+
+.sectionIcon {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+.sectionTitle {
+  margin: 0;
+
+  color: #17221d;
+
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.sectionSubtitle {
+  margin: 3px 0 0;
+
+  color: var(--muted);
+
+  font-size: 11px;
+}
+
+
+/* ================================================= */
+/* TEXT CARD */
+/* ================================================= */
+
+.textCard {
+  background: #ffffff;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  padding: 22px 24px;
+}
+
+.textCard p {
+  margin: 0 0 13px;
+
+  color: #5f6a64;
+
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.textCard p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ================================================= */
+/* FEATURES */
+/* ================================================= */
+
+.featureGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 12px;
+}
+
+.featureCard {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 13px;
+
+  padding: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid var(--border);
+  border-radius: 13px;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.featureCard:hover {
+  border-color: #cbded1;
+
+  box-shadow:
+    0 5px 16px rgba(23, 34, 29, 0.04);
+
+  transform: translateY(-1px);
+}
+
+.featureIcon {
+  width: 35px;
+  height: 35px;
+
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 9px;
+
+  background: var(--green-soft);
+  color: var(--green-dark);
+}
+
+.featureCard h3 {
+  margin: 1px 0 5px;
+
+  color: #17221d;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.featureCard p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  line-height: 1.65;
+}
+
+
+/* ================================================= */
+/* CONTACT */
+/* ================================================= */
+
+.contactCard {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 20px 22px;
+
+  margin-top: 4px;
+
+  background: var(--green-soft);
+
+  border: 1px solid #d7eadf;
+  border-radius: 14px;
+}
+
+.contactIcon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: var(--green-dark);
+}
+
+.contactContent {
+  min-width: 0;
+}
+
+.contactContent h2 {
+  margin: 0;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  color: #17221d;
+}
+
+.contactContent p {
+  margin: 3px 0 9px;
+
+  color: #65706a;
+
+  font-size: 11px;
+}
+
+
+/* ================================================= */
+/* CONTACT ACTIONS */
+/* ================================================= */
+
+.contactActions {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 7px 11px;
+
+  border-radius: 7px;
+
+  background: #ffffff;
+
+  color: var(--green-dark);
+
+  border: 1px solid #d3e5da;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    background 0.15s ease,
+    transform 0.15s ease;
+}
+
+.actionButton:hover {
+  background: #f7fbf8;
+
+  transform: translateY(-1px);
+}
+
+
+/* ================================================= */
+/* FOOTER */
+/* ================================================= */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding-top: 26px;
+
+  color: #89918c;
+
+  font-size: 9px;
+}
+
+.footer div {
+  color: #68736c;
+
+  font-weight: 800;
+}
+
+.footer span {
+  padding-left: 10px;
+
+  border-left: 1px solid #dce2de;
+}
+
+
+/* ================================================= */
+/* RESPONSIVE */
+/* ================================================= */
+
+@media (max-width: 1000px) {
+
+  .featureGrid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+@media (max-width: 760px) {
+
+  .page {
+    padding: 24px 18px 40px;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .profileCard {
+    align-items: flex-start;
+  }
+
+  .featureGrid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 520px) {
+
+  .profileCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profileImageWrapper {
+    width: 105px;
+    height: 105px;
+  }
+
+  .contactLinks {
+    width: 100%;
+  }
+
+  .contactButton {
+    flex: 1;
+  }
+
+  .contactCard {
+    align-items: flex-start;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+  }
+
+}

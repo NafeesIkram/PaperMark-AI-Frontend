@@ -1,0 +1,331 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 24px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(21, 128, 61, 0.08),
+      transparent 35%
+    ),
+    #f6f8f7;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  width: 100%;
+  max-width: 460px;
+  background: #ffffff;
+  border: 1px solid #e3e8e5;
+  border-radius: 18px;
+  padding: 34px;
+
+  box-shadow:
+    0 18px 45px rgba(23, 34, 29, 0.08),
+    0 2px 8px rgba(23, 34, 29, 0.03);
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo img {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.brand h1 {
+  margin: 0;
+  color: #17221d;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+.brand p {
+  margin: 4px 0 0;
+  color: #6c7771;
+  font-size: 12px;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.heading {
+  margin-bottom: 24px;
+}
+
+.heading h2 {
+  margin: 0;
+  color: #17221d;
+  font-size: 27px;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+}
+
+.heading p {
+  margin: 8px 0 0;
+  color: #6c7771;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.formGroup label {
+  color: #17221d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================
+   INPUT
+========================= */
+
+.inputWrap {
+  width: 100%;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 0 13px;
+
+  background: #ffffff;
+  border: 1px solid #e3e8e5;
+  border-radius: 10px;
+
+  color: #87918c;
+
+  transition:
+    border-color 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.inputWrap:focus-within {
+  border-color: #15803d;
+  box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.1);
+}
+
+.inputWrap input {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #17221d;
+  font-size: 14px;
+}
+
+.inputWrap input::placeholder {
+  color: #a0aaa5;
+}
+
+/* =========================
+   PASSWORD TOGGLE
+========================= */
+
+.passwordToggle {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #7d8882;
+}
+
+.passwordToggle:hover {
+  background: #eaf7ee;
+  color: #15803d;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit {
+  width: 100%;
+  height: 47px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-top: 4px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #15803d;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 750;
+
+  transition:
+    background 0.18s ease,
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+
+.submit:hover:not(:disabled) {
+  background: #11632f;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 18px rgba(21, 128, 61, 0.2);
+}
+
+.submit:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* =========================
+   ERROR / SUCCESS
+========================= */
+
+.error,
+.success {
+  padding: 11px 13px;
+
+  border-radius: 9px;
+
+  font-size: 13px;
+  line-height: 1.45;
+
+  margin-bottom: 17px;
+}
+
+.error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+}
+
+.success {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  margin-top: 23px;
+
+  color: #6c7771;
+  font-size: 13px;
+}
+
+.footer a {
+  color: #15803d;
+  font-weight: 750;
+}
+
+.footer a:hover {
+  color: #11632f;
+  text-decoration: underline;
+}
+
+/* =========================
+   BOTTOM TEXT
+========================= */
+
+.bottom {
+  margin-top: 18px;
+
+  text-align: center;
+
+  color: #8a948f;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 520px) {
+  .page {
+    padding: 24px 14px 20px;
+  }
+
+  .card {
+    padding: 26px 21px;
+    border-radius: 15px;
+  }
+
+  .heading h2 {
+    font-size: 24px;
+  }
+
+  .brand {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,742 @@
+.page {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 28px 28px 110px;
+}
+
+/* ---------------------------------------------------------
+   Header
+--------------------------------------------------------- */
+
+.pageHeader {
+  margin-bottom: 22px;
+}
+
+.eyebrow {
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  margin-bottom: 5px;
+}
+
+.pageTitle {
+  margin: 0;
+  color: #172019;
+  font-size: 27px;
+  line-height: 1.15;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.pageDescription {
+  margin: 6px 0 0;
+  color: #7b8580;
+  font-size: 13px;
+}
+
+/* ---------------------------------------------------------
+   Summary
+--------------------------------------------------------- */
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.summaryCard {
+  min-height: 70px;
+  padding: 17px 19px;
+  border: 1px solid #dfe7e1;
+  border-radius: 11px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.summaryValue {
+  color: #172019;
+  font-size: 19px;
+  line-height: 1;
+  font-weight: 750;
+}
+
+.summaryLabel {
+  color: #2d3831;
+  font-size: 14px;
+}
+
+/* ---------------------------------------------------------
+   Evaluation card
+--------------------------------------------------------- */
+
+.evaluationCard {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 15px;
+  margin-bottom: 18px;
+  border: 1px solid #dfe7e1;
+  border-radius: 11px;
+  background: #ffffff;
+}
+
+.evaluationIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 9px;
+  background: #eef9f1;
+  color: #159447;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.evaluationInfo {
+  min-width: 0;
+}
+
+.evaluationInfo h2 {
+  margin: 0 0 3px;
+  color: #1b241e;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.evaluationInfo p {
+  margin: 0;
+  color: #87908b;
+  font-size: 10px;
+}
+
+/* ---------------------------------------------------------
+   Error
+--------------------------------------------------------- */
+
+.errorBanner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  padding: 10px 13px;
+  border: 1px solid #f2bcbc;
+  border-radius: 8px;
+  background: #fff7f7;
+  color: #b42318;
+  font-size: 12px;
+}
+
+/* ---------------------------------------------------------
+   Students card
+--------------------------------------------------------- */
+
+.studentsCard {
+  padding: 18px;
+  border: 1px solid #dfe7e1;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 17px;
+}
+
+.sectionHeader h2 {
+  margin: 0 0 4px;
+  color: #1b241e;
+  font-size: 16px;
+  font-weight: 750;
+}
+
+.sectionHeader p {
+  margin: 0;
+  color: #87908b;
+  font-size: 11px;
+}
+
+.addStudentButton {
+  height: 33px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid #b9ddc3;
+  border-radius: 7px;
+  background: #f7fcf8;
+  color: #15803d;
+  font-size: 11px;
+  font-weight: 650;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.addStudentButton:hover {
+  background: #eef9f1;
+}
+
+/* ---------------------------------------------------------
+   Student list
+--------------------------------------------------------- */
+
+.studentList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.studentItem {
+  overflow: hidden;
+  border: 1px solid #dce5df;
+  border-radius: 10px;
+  background: #ffffff;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.studentItemOpen {
+  border-color: #b9d9c1;
+  box-shadow: 0 2px 8px rgba(26, 60, 37, 0.04);
+}
+
+/* ---------------------------------------------------------
+   Student header
+--------------------------------------------------------- */
+
+.studentHeader {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.studentHeaderButton {
+  flex: 1;
+  min-width: 0;
+  min-height: 56px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.studentNumber {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: #edf8f0;
+  color: #168342;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.studentMain {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.studentMain strong {
+  overflow: hidden;
+  color: #202a23;
+  font-size: 12px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.studentMain span {
+  overflow: hidden;
+  color: #8b938e;
+  font-size: 9px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.studentActions {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.completeIcon {
+  color: #159447;
+}
+
+.incompleteIcon {
+  width: 21px;
+  height: 21px;
+  border: 1px solid #cbd8cf;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #78847c;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.chevronButton {
+  width: 27px;
+  height: 27px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #77827b;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* ---------------------------------------------------------
+   Student body
+--------------------------------------------------------- */
+
+.studentBody {
+  padding: 0 14px 16px;
+  border-top: 1px solid #e8eee9;
+}
+
+.studentInfoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 15px 0 17px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  color: #37433b;
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.field label span {
+  color: #d03939;
+}
+
+.field label small {
+  margin-left: 4px;
+  color: #9aa29d;
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.field input {
+  width: 100%;
+  height: 37px;
+  padding: 0 11px;
+  border: 1px solid #d7e1da;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #253029;
+  font-size: 11px;
+}
+
+.field input:focus {
+  border-color: #71b783;
+  box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.08);
+}
+
+.field input::placeholder {
+  color: #adb5b0;
+}
+
+/* ---------------------------------------------------------
+   Answers
+--------------------------------------------------------- */
+
+.answersSection {
+  border-top: 1px solid #edf1ee;
+  padding-top: 16px;
+}
+
+.answersTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 11px;
+}
+
+.answersTitle h3 {
+  margin: 0;
+  color: #29342d;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.answersTitle span {
+  color: #929b95;
+  font-size: 9px;
+}
+
+.questionList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.questionBlock {
+  padding: 13px;
+  border: 1px solid #e0e7e2;
+  border-radius: 8px;
+  background: #fafcfb;
+}
+
+.questionHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+
+.questionNumber {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: #edf8f0;
+  color: #168342;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-size: 9px;
+  font-weight: 750;
+}
+
+.questionText {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.questionText strong {
+  color: #29332d;
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 650;
+}
+
+.questionText span {
+  color: #929b95;
+  font-size: 9px;
+}
+
+.questionBlock textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 11px;
+  resize: vertical;
+  border: 1px solid #d7e1da;
+  border-radius: 7px;
+  outline: none;
+  background: #ffffff;
+  color: #263029;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.questionBlock textarea:focus {
+  border-color: #71b783;
+  box-shadow: 0 0 0 3px rgba(21, 128, 61, 0.08);
+}
+
+.questionBlock textarea::placeholder {
+  color: #adb5b0;
+}
+
+/* ---------------------------------------------------------
+   Student footer
+--------------------------------------------------------- */
+
+.studentFooter {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 13px;
+}
+
+.removeButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 8px;
+  border: 0;
+  background: transparent;
+  color: #b42318;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.removeButton:hover:not(:disabled) {
+  text-decoration: underline;
+}
+
+.removeButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ---------------------------------------------------------
+   Add another student
+--------------------------------------------------------- */
+
+.addAnotherButton {
+  width: 100%;
+  height: 37px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px dashed #b9d9c1;
+  border-radius: 7px;
+  background: #fbfefc;
+  color: #168342;
+  font-size: 10px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.addAnotherButton:hover {
+  background: #f2faf4;
+}
+
+/* ---------------------------------------------------------
+   Bottom bar
+--------------------------------------------------------- */
+
+.bottomBar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  min-height: 70px;
+  padding: 12px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-top: 1px solid #dfe7e1;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+}
+
+.backButton {
+  height: 35px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #d7e1da;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #46524a;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.backButton:hover {
+  background: #f7f9f8;
+}
+
+.bottomRight {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.addedInfo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #77827b;
+  font-size: 10px;
+}
+
+.addedInfo svg {
+  color: #159447;
+}
+
+.createButton {
+  height: 37px;
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 8px;
+  background: #15803d;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(21, 128, 61, 0.18);
+}
+
+.createButton:hover:not(:disabled) {
+  background: #116b34;
+}
+
+.createButton:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+/* ---------------------------------------------------------
+   Loading / empty
+--------------------------------------------------------- */
+
+.loadingState {
+  min-height: 300px;
+  display: grid;
+  place-items: center;
+  color: #7d8781;
+  font-size: 13px;
+}
+
+.emptyState {
+  min-height: 300px;
+  padding: 30px;
+  border: 1px solid #dfe7e1;
+  border-radius: 12px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #7d8781;
+}
+
+.emptyState svg {
+  margin-bottom: 10px;
+  color: #79a987;
+}
+
+.emptyState h2 {
+  margin: 0 0 5px;
+  color: #27322b;
+  font-size: 16px;
+}
+
+.emptyState p {
+  margin: 0 0 15px;
+  font-size: 11px;
+}
+
+.primaryButton {
+  height: 35px;
+  padding: 0 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 7px;
+  background: #15803d;
+  color: white;
+  font-size: 10px;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------
+   Development info
+--------------------------------------------------------- */
+
+.devInfo {
+  margin-top: 10px;
+  text-align: right;
+  color: #a0aaa4;
+  font-size: 9px;
+}
+
+/* ---------------------------------------------------------
+   Responsive
+--------------------------------------------------------- */
+
+@media (max-width: 800px) {
+  .page {
+    padding: 22px 16px 105px;
+  }
+
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHeader {
+    flex-direction: column;
+  }
+
+  .addStudentButton {
+    align-self: flex-start;
+  }
+
+  .studentInfoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomBar {
+    padding: 10px 16px;
+  }
+
+  .addedInfo {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .pageTitle {
+    font-size: 23px;
+  }
+
+  .studentsCard {
+    padding: 12px;
+  }
+
+  .studentBody {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .bottomBar {
+    min-height: 62px;
+  }
+
+  .backButton {
+    padding: 0 9px;
+  }
+
+  .createButton {
+    padding: 0 11px;
+  }
+}

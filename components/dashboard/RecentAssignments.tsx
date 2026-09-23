@@ -1,0 +1,5 @@
+import Link from "next/link";
+import { Assignment } from "@/types/app";
+export default function RecentAssignments({items}:{items:Assignment[]}) {
+  return <div className="card"><div className="card-head"><div className="card-title">Recent evaluations</div><Link href="/assignments" className="btn" style={{padding:"7px 10px",fontSize:11}}>View all</Link></div><div className="card-body table-wrap"><table className="table"><thead><tr><th>Assignment</th><th>Submissions</th><th>Progress</th><th>Status</th></tr></thead><tbody>{items.map(a=><tr key={a.id}><td><Link href={`/assignments/${a.id}`}><strong>{a.title}</strong><div style={{fontSize:11,color:"#89938e",marginTop:3}}>{a.course}</div></Link></td><td>{a.submissions}</td><td>{a.evaluated}/{a.submissions}</td><td><span className={`status ${a.status==="Completed"?"green":a.status==="Processing"?"amber":"gray"}`}>{a.status}</span></td></tr>)}</tbody></table></div></div>;
+}
