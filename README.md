@@ -1,8 +1,18 @@
-# PaperMark AI
+<div align="left">
+  <img src="Screenshots/logo.png" alt="PaperMark AI Logo" width="55" align="left" style="margin-right: 15px;">
+
+  <h1>
+    PaperMark AI
+    <img src="https://img.shields.io/badge/version-v1.0-green" alt="v1.0">
+    <img src="https://img.shields.io/badge/status-Beta-orange" alt="Beta">
+  </h1>
+</div>
+
+<br clear="left">
 
 PaperMark AI is an AI-assisted assignment evaluation platform that helps instructors evaluate student answers, generate scores, and provide feedback.
 
-The project is currently in the MVP and development stage. More evaluation and document processing features are planned for future versions.
+The project is currently in the MVP and beta stage. More evaluation and document processing features are planned for future versions.
 
 ## Live Demo
 
