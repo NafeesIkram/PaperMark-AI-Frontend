@@ -12,6 +12,28 @@ https://paper-mark-ai-frontend.vercel.app/
 Backend API:  
 https://papermark-ai-backend.onrender.com/
 
+## Screenshots
+
+### Login
+
+![PaperMark AI Login](Screenshots/Login.png)
+
+### New Evaluation
+
+![PaperMark AI New Evaluation](Screenshots/new-evaluation.png)
+
+### Evaluation Result
+
+![PaperMark AI Evaluation Result](Screenshots/evaluation-result.png)
+
+### Analytics
+
+![PaperMark AI Analytics](Screenshots/analytics.png)
+
+### Extensions
+
+![PaperMark AI Extensions](Screenshots/extensions.png)
+
 ## About the Project
 
 PaperMark AI allows an instructor to create an evaluation by providing questions and expected answers. Student answers can then be evaluated using AI-assisted analysis.
