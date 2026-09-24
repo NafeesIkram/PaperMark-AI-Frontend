@@ -95,6 +95,94 @@
 
 
 /* ================================================= */
+/* DEVELOPMENT STATUS */
+/* ================================================= */
+
+.statusCard {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 14px;
+
+  padding: 18px 20px;
+
+  margin-bottom: 28px;
+
+  background: var(--green-soft);
+
+  border: 1px solid #d7eadf;
+  border-radius: 14px;
+}
+
+.statusIcon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  color: var(--green-dark);
+}
+
+.statusContent {
+  min-width: 0;
+}
+
+.statusHeader {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  flex-wrap: wrap;
+}
+
+.statusHeader h2 {
+  margin: 0;
+
+  color: #17221d;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.statusContent p {
+  max-width: 850px;
+
+  margin: 5px 0 0;
+
+  color: #65706a;
+
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 4px 8px;
+
+  border-radius: 999px;
+
+  background: #ffffff;
+
+  color: var(--green-dark);
+
+  border: 1px solid #d3e5da;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+
+/* ================================================= */
 /* PROFILE */
 /* ================================================= */
 
@@ -378,6 +466,36 @@
 
 
 /* ================================================= */
+/* COMING SOON */
+/* ================================================= */
+
+.comingSoon {
+  display: inline-flex;
+  align-items: center;
+
+  width: fit-content;
+
+  margin-top: 9px;
+
+  padding: 4px 7px;
+
+  border-radius: 999px;
+
+  background: var(--green-soft);
+
+  color: var(--green-dark);
+
+  border: 1px solid #d7eadf;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+
+/* ================================================= */
 /* CONTACT */
 /* ================================================= */
 
@@ -568,12 +686,21 @@
     flex: 1;
   }
 
+  .statusCard {
+    align-items: flex-start;
+  }
+
   .contactCard {
     align-items: flex-start;
   }
 
   .footer {
     flex-wrap: wrap;
+  }
+
+  .footer span {
+    border-left: none;
+    padding-left: 0;
   }
 
 }
