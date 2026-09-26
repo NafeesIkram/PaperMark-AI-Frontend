@@ -11,9 +11,11 @@
 
 <br clear="left">
 
-PaperMark AI is an AI-assisted assignment evaluation platform that helps instructors evaluate student answers, generate scores, and provide feedback.
+PaperMark AI is an AI assisted assignment evaluation platform designed to help instructors evaluate student answers more efficiently, consistently, and transparently. It addresses a common academic concern where students may question whether their marks accurately reflect the quality of their answers compared with other students’ answers, while instructors may need an additional reference when responding to grading concerns or reviewing.
 
-The project is currently in the MVP and beta stage. More evaluation and document processing features are planned for future versions.
+Instructors can choose between fully AI powered evaluation or use AI as a second opinion alongside their own grading. They can define questions, expected answers, marks, and custom rubrics based on criteria such as semantic meaning, conceptual accuracy, completeness, and relevance. PaperMark AI then generates scores, detailed feedback, and question level evaluations. Instructors can also compare the AI evaluation with their own assessment before making the final grading decision.
+
+The project is currently in the MVP and Beta stage, with additional grading comparison, evaluation consistency analysis, and document processing features planned for future versions.
 
 ## Live Demo
 
@@ -47,7 +49,7 @@ https://papermark-ai-backend.onrender.com/
 
 ## About the Project
 
-PaperMark AI allows an instructor to create an evaluation by providing questions and expected answers. Student answers can then be evaluated using AI-assisted analysis.
+PaperMark AI allows an instructor to create an evaluation by providing questions and expected answers. Student answers can then be evaluated using AI assisted analysis.
 
 The system generates a score and evaluation feedback based on the student's answer. It also provides an overview of student results and evaluation statistics.
 
