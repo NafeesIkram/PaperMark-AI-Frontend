@@ -5,7 +5,7 @@
     PaperMark AI
     <img src="https://img.shields.io/badge/version-v1.0-green" alt="v1.0">
     <img src="https://img.shields.io/badge/status-Beta-orange" alt="Beta">
-    <img src="https://img.shields.io/badge/Vercel-Deployed-green" alt="Vercel Deployed">
+    <img src="https://img.shields.io/badge/Vercel-Deployed-blue" alt="Vercel Deployed">
   </h1>
 </div>
 
